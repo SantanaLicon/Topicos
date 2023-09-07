@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+/* Configuración básica */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(238, 10, 189, 0.9),
+    rgba(236, 115, 16, 0.822)
+  );
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border: 5px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 238, 2, 0.9),
+    rgba(16, 210, 236, 0.822)
+  );
+}
+
+.cajas {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: center;
+}
+.cajas label {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cajas input {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+}
+
+.boton {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: center;
+  justify-self: center;
+}
+
+.boton {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.boton button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  background-color: #7038e3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton button:hover {
+  background-color: #542fc2;
+  transform: scale(1.05);
+}
+
+form p {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #ff0000;
+  font-weight: bold;
+}

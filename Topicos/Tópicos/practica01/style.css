@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: auto 70%;
+  }
+  
+  .left{
+    padding: 20px;
+    border: 5px solid teal;
+    background-color: rgb(250, 139, 36);
+    
+  }
+  .right {
+    padding: 20px;
+    background-color: teal;
+  }
+  
+  /* Estilos específicos para la columna izquierda */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  .left-content__avatar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid #3ce7ae;
+    margin: 10px;
+  }
+
+  .left-content__name h2 p,
+  .left-content__profile h2,
+  .left-content__contact h2{
+    text-align: center;
+  }
+
+  /* Estilos específicos para la columna derecha */
+  .right {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    overflow: hidden;
+  }
+  
+  .right-content__title h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+  
+  .right-content__experience h2,
+  .right-content_school h2,
+  .right-content__languages h2,
+  .right-content_socialmedia h2 {
+    margin-top: 20px;
+  }
+  
+  .right-content_school ul,
+  .right-content__languages ul,
+  .right-content_socialmedia ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .right-content_school li,
+  .right-content__languages li,
+  .right-content_socialmedia li {
+    margin-bottom: 5px;
+  }
